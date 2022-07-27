@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Analysis</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <!-- Custom Files -->
+    <link rel="stylesheet" href="../css/index.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Rock+Salt&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <img src="../images/skull.png" alt="skull" id="skull1">
+    <img src="../images/skull.png" alt="skull" id="skull2">
+
+    <main class="">
+        <h1 class="mb-5" id="heading">Can you make it?</h1>
+
+        <form>
+            <div class="input-group mx-auto mb-3" id="inputs">
+                <div class="form-floating pe-2">
+                    <input type="number" name="age" placeholder="000" class="form-control" id="age" required min="0" max="119">
+                    <label for="age">Desired Age</label>
+                </div>
+
+                <select name="sex" class="form-select" id="sex" aria-label="Biological Sex" required>
+                    <option value="" selected>Sex</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <button type="button" class="btn mt-3" id="submit" tabindex="2">Simulate</button>
+        </form>
+    </main>
+
+    <p id="disclaimer">
+        <strong>Disclaimer: It may take a while to get the results!</strong>
+        The server has to simulate every person in a very large population. 
+        Depending on your desired age and sex, you may be waiting for 10-60 seconds.
+        <strong>Please just be patient with us and we'll get the results ASAP.</strong>
+    </p>
+
+    <p id="copy">
+        Everyone dies. This is a fact known by most people. Many also wonder: "When will I die?"
+        While it's nearly impossible to say exactly, we can use statistics to get a rough approximation!
+        Specifically, we use statistics collected by the <a href="https://www.ssa.gov/oact/STATS/table4c6.html" target="_blank">US Social Security Agency</a> to find the chance of dying every year.
+        Simply enter the age that you would like to reach and your biological sex (the one on your birth certificate)
+        and we'll simulate nearly 1 million lifetimes of the average person per second.
+        Then you'll see exactly how many simulations reached your desired age!
+    </p>
+</body>
+</html>

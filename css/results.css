@@ -1,0 +1,49 @@
+body {
+    font-family: 'EB Garamond', serif;
+    color: #b0b3b8;
+    text-align: center;
+    background-color: #1f2021;
+}
+
+#skull1, #skull2 {
+    position: absolute;
+    width: 10rem;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+@media screen and (max-width: 740px) {
+    #skull1, #skull2 {
+        opacity: 0;
+    }
+}
+
+#skull1 {
+    left: 10vw;
+}
+
+#skull2 {
+    right: 10vw;
+}
+
+main {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.btn {
+    margin: 80vh auto 0 auto;
+    font-size: 1.5rem;
+    background-color: #21201f;
+    color: #b0b3b8;
+    border: 2px solid #83868b;
+}
+
+.btn:hover {
+    border: 2px solid #2f4e79;
+}

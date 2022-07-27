@@ -1,0 +1,88 @@
+body {
+    font-family: 'EB Garamond', serif;
+    color: #b0b3b8;
+    text-align: center;
+    background-color: #1f2021;
+}
+
+#skull1, #skull2 {
+    position: absolute;
+    width: 10rem;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+@media screen and (max-width: 760px) {
+    #skull1, #skull2 {
+        opacity: 0;
+    }
+}
+
+#skull1 {
+    left: 10vw;
+}
+
+#skull2 {
+    right: 10vw;
+}
+
+main {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#heading {
+    font-family: 'Rock Salt', cursive;
+    font-size: 2rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    box-shadow: 0 0 0 30px #21201f inset;
+    -webkit-box-shadow: 0 0 0 30px #21201f inset;
+    -webkit-text-fill-color: #b0b3b8;
+}
+
+#age, #sex {
+    background-color: #21201f;
+    color: #b0b3b8;
+    min-width: 150px;
+    max-width: 150px;
+}
+
+#sex {
+    border-radius: 5px;
+}
+
+#submit {
+    font-size: 1.5rem;
+    background-color: #21201f;
+    color: #b0b3b8;
+    border: 2px solid #83868b;
+    /* margin-top: 10px; */
+}
+
+#submit:hover {
+    border: 2px solid #2f4e79;
+}
+
+#disclaimer {
+    font-size: 1.2rem;
+    margin: 80vh auto 0 auto;
+    width: 50%;
+}
+
+#copy {
+    font-size: 1.2rem;
+    margin: 5vh auto 0 auto;
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+}
