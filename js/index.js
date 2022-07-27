@@ -12,7 +12,7 @@ function getDeathChance(age, sex) {
 
 function simulate(desiredAge, sex) {
     const startTime = new Date()
-    const sampleSize = 1000
+    const sampleSize = 20000
     let age = 0
     let maxAge = 0
     let lifetimes = 0
@@ -59,6 +59,7 @@ function simulate(desiredAge, sex) {
         maxAge: `${maxAge}`,
         lifetimes: `${lifetimes}`,
         reachedDesiredAge: `${reachedDesiredAge}`,
+        percentReached: `${Math.floor(reachedDesiredAge / lifetimes * 1000) / 10}`
     }
 
     return data
@@ -69,5 +70,16 @@ document.querySelector('main form').addEventListener('submit', e => {
     const desiredAge = document.querySelector('input#age').value
     const sex = document.querySelector('select#sex').value
     const result = simulate(parseInt(desiredAge), sex)
-    console.log({ result })
+    const resultField = document.querySelector('#results')
+
+    let sexForm
+    if (parseInt(result['reachedDesiredAge']) === 1) {
+        sexForm = `${sex}`
+    } else {
+        sexForm = `${sex}s`
+    }
+
+    resultField.innerHTML = 
+        `The simulation took ${result['timeElapsed']} seconds to complete. <br/>
+        Out of ${result['lifetimes']} lifetimes, ${result['reachedDesiredAge']} ${sexForm} reached ${result['desiredAge']} years old (${result['percentReached']}%)!`
 })

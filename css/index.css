@@ -64,22 +64,35 @@ input:-webkit-autofill:active{
     background-color: #21201f;
     color: #b0b3b8;
     border: 2px solid #83868b;
-    /* margin-top: 10px; */
+    margin-left: -13px;
 }
 
 #submit:hover {
     border: 2px solid #2f4e79;
 }
 
-#disclaimer {
+#results {
+    min-height: 75px;
+    margin: 65vh auto 0 auto;
     font-size: 1.2rem;
-    margin: 80vh auto 0 auto;
     width: 50%;
+}
+
+@media screen and (max-width: 649px) {
+    #results {
+        margin: 67vh auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    #results {
+        margin: 69vh auto 0 auto;
+    }
 }
 
 #copy {
     font-size: 1.2rem;
-    margin: 5vh auto 0 auto;
+    margin: 25px auto 0 auto;
     width: 50%;
 }
 
