@@ -79,7 +79,14 @@ document.querySelector('main form').addEventListener('submit', e => {
         sexForm = `${sex}s`
     }
 
+    let yearForm
+    if (parseInt(result['desiredAge']) === 1) {
+        yearForm = 'year'
+    } else {
+        yearForm = 'years'
+    }
+
     resultField.innerHTML = 
         `The simulation took ${result['timeElapsed']} seconds to complete. <br/>
-        Out of ${result['lifetimes']} lifetimes, ${result['reachedDesiredAge']} ${sexForm} reached ${result['desiredAge']} years old (${result['percentReached']}%)!`
+        Out of ${result['lifetimes']} lifetimes, ${result['reachedDesiredAge']} ${sexForm} reached ${result['desiredAge']} ${yearForm} old (${result['percentReached']}%)!`
 })
