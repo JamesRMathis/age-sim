@@ -23,7 +23,6 @@ function simulate(desiredAge, sex) {
 
         // if they reach the desired age
         if(age === desiredAge) {
-            // console.log('desired age reached');
             if(age > maxAge) {
                 maxAge = age
             }
@@ -36,7 +35,6 @@ function simulate(desiredAge, sex) {
 
         // if they die
         if((Math.random() <= deathChance)) {
-            // console.log('died');
             if(age > maxAge) {
                 maxAge = age
             }
@@ -48,7 +46,6 @@ function simulate(desiredAge, sex) {
 
         // if they survive
         age += 1
-        // console.log({ age, lifetimes, reachedDesiredAge })
     }
 
     const endTime = new Date()

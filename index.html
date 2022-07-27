@@ -25,51 +25,44 @@
 
 </head>
 <body>
-    <!-- <div class="min-vh-100 d-flex flex-column justify-content-between">
-        <div> -->
-            <img src="images/skull.png" alt="" id="skull1">
-            <img src="images/skull.png" alt="" id="skull2">
+    <img src="images/skull.png" alt="" id="skull1">
+    <img src="images/skull.png" alt="" id="skull2">
 
-            <main>
-                <h1 class="mb-5" id="heading">Can you make it?</h1>
+    <main>
+        <h1 class="mb-5" id="heading">Can you make it?</h1>
 
-                <form>
-                    <div class="input-group mx-auto mb-3" id="inputs">
-                        <select name="sex" class="form-select me-3" id="sex" aria-label="Biological Sex" required>
-                            <option value="" selected>Sex</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>
+        <form>
+            <div class="input-group mx-auto mb-2" id="inputs">
+                <select name="sex" class="form-control form-select" id="sex" aria-label="Biological Sex" required>
+                    <option value="" selected>Sex</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
 
-                        <div class="form-floating pe-2">
-                            <input type="number" name="age" placeholder="000" class="form-control" id="age" required min="0" max="119">
-                            <label for="age">Desired Age</label>
-                        </div>
-                    </div>
+                <div class="form-floating w-100 mt-2">
+                    <input type="number" name="age" placeholder="000" class="form-control" id="age" required min="0" max="119">
+                    <label for="age">Desired Age</label>
+                </div>
+            </div>
 
-                    <button type="submit" class="btn mt-3" id="submit" tabindex="2">Simulate</button>
-                </form>
-            </main>
+            <button type="submit" class="btn mt-2" id="submit" tabindex="2">Simulate</button>
+        </form>
+    </main>
 
-            <p id="results"></p>
+    <p id="results"></p>
 
-            <p id="copy">
-                Everyone dies. This is a fact known by most people. Many also wonder: "When will I die?"
-                While it's nearly impossible to say exactly, we can use statistics to get a rough approximation!
-                Specifically, we use statistics collected by the <a href="https://www.ssa.gov/oact/STATS/table4c6.html" target="_blank">US Social Security Agency</a> to find the chance of dying every year.
-                Simply enter the age that you would like to reach (between 0 and 119) and your biological sex (the one on your birth certificate)
-                and we'll simulate between 100k and 300k lifetimes of the average person per second, depending on your machine.
-                Then you'll see exactly how many simulations reached your desired age!
-            </p>
-        <!-- </div> -->
-        
-        <footer class="container-fluid mt-5">
-            <p style="display: inline;" class="me-1">Developed by James Mathis</p>
-            <a href="https://github.com/JamesRMathis" target="_blank"><i class="fa-brands fa-github icon-link ms-1"></i></a>
-        </footer>
-    <!-- </div> -->
-    
+    <p class="mb-5" id="copy">
+        Everyone dies. This is a fact known by most people. Many also wonder: "When will I die?"
+        While it's nearly impossible to say exactly, we can use statistics to get a rough approximation!
+        Specifically, we use statistics collected by the <a href="https://www.ssa.gov/oact/STATS/table4c6.html" target="_blank">US Social Security Agency</a> to find the chance of dying every year.
+        Simply enter the age that you would like to reach (between 0 and 119) and your biological sex (the one on your birth certificate)
+        and we'll simulate between 100k and 300k lifetimes of the average person per second, depending on your machine.
+        Then you'll see exactly how many simulations reached your desired age!
+    </p>
 
-    
+<footer>
+    <p style="display: inline;" class="me-1">Developed by James Mathis</p>
+    <a href="https://github.com/JamesRMathis" target="_blank"><i class="fa-brands fa-github icon-link ms-1"></i></a>
+</footer>
 </body>
 </html>

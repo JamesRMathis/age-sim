@@ -3,7 +3,7 @@ body {
     color: #b0b3b8;
     text-align: center;
     background-color: #1f2021;
-    /* width: 98%; */
+    overflow-x: hidden;
 }
 
 #skull1, #skull2 {
@@ -40,6 +40,10 @@ main {
     font-size: 2rem;
 }
 
+#inputs {
+    display: flex;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
@@ -53,7 +57,7 @@ input:-webkit-autofill:active{
     background-color: #21201f;
     color: #b0b3b8;
     min-width: 150px;
-    max-width: 150px;
+    min-height: 58px;
 }
 
 #sex {
@@ -65,7 +69,6 @@ input:-webkit-autofill:active{
     background-color: #21201f;
     color: #b0b3b8;
     border: 2px solid #83868b;
-    margin-left: -13px;
 }
 
 #submit:hover {
@@ -74,26 +77,20 @@ input:-webkit-autofill:active{
 
 #results {
     min-height: 75px;
-    margin: 65vh auto 0 auto;
+    margin: 68vh auto 0 auto;
     font-size: 1.2rem;
     width: 50%;
 }
 
 @media screen and (max-width: 649px) {
     #results {
-        margin: 67vh auto 0 auto;
+        margin: 70vh auto 0 auto;
     }
 }
 
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 327px) {
     #results {
-        margin: 69vh auto 0 auto;
-    }
-}
-
-@media screen and (max-width: 645px) {
-    #results {
-        margin: 69vh auto 0 auto;
+        margin: 72vh auto 0 auto;
     }
 }
 
@@ -108,7 +105,7 @@ a {
 }
 
 footer {
-    position: sticky;
+    position: fixed;
     bottom: 0;
     min-width: 100vw;
     background-color: #2c333b;
