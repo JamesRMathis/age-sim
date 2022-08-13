@@ -28,20 +28,36 @@ body {
 }
 
 main {
-    position: absolute;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    /* align-items: flex-end; */
+    /* position: absolute;
     margin: 0;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 #heading {
     font-family: 'Rock Salt', cursive;
     font-size: 2rem;
+    flex-basis: 50%;
+    /* align-self: center; */
+    /* flex: 1; */
 }
 
 #inputs {
-    display: flex;
+    flex-basis: 50%;
+    /* flex: 1; */
 }
 
 input:-webkit-autofill,
@@ -82,7 +98,7 @@ input:-webkit-autofill:active{
     width: 50%;
 }
 
-@media screen and (max-width: 649px) {
+/* @media screen and (max-width: 649px) {
     #results {
         margin: 70vh auto 0 auto;
     }
@@ -92,7 +108,7 @@ input:-webkit-autofill:active{
     #results {
         margin: 72vh auto 0 auto;
     }
-}
+} */
 
 
 #copy {
