@@ -9,7 +9,7 @@ body {
 #skull1, #skull2 {
     position: absolute;
     width: 10rem;
-    top: 50%;
+    top: 35%;
     transform: translateY(-50%)
 }
 
