@@ -39,7 +39,7 @@ main {
 
 #heading-container {
     flex-basis: 50%;
-    flex: auto;
+    /* flex: auto; */
 }
 
 #heading {
@@ -50,6 +50,7 @@ main {
 
 #inputs {
     flex-basis: 50%;
+    max-width: 325px;
     /* flex: ; */
 }
 
@@ -85,12 +86,14 @@ input:-webkit-autofill:active{
 }
 
 #results {
+    display: none;
     min-height: 75px;
     /* margin: 68vh auto 0 auto; */
     /* justify-self: center; */
     flex-basis: 50%;
     font-size: 1.2rem;
-    width: 50%;
+    margin: auto;
+    /* width: 50%; */
 }
 
 /* @media screen and (max-width: 649px) {
@@ -108,7 +111,7 @@ input:-webkit-autofill:active{
 
 #copy {
     font-size: 1.2rem;
-    margin: 25px auto 0 auto;
+    margin: 0px auto 0 auto;
     width: 50%;
 }
 

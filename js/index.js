@@ -83,6 +83,7 @@ document.querySelector('main form').addEventListener('submit', e => {
         yearForm = 'years'
     }
 
+    resultField.style.display = "block";
     resultField.innerHTML = 
         `The simulation took ${result['timeElapsed']} seconds to complete. <br/>
         Out of ${result['lifetimes']} lifetimes, ${result['reachedDesiredAge']} ${sexForm} reached ${result['desiredAge']} ${yearForm} old (${result['percentReached']}%)!`
