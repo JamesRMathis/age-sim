@@ -9,7 +9,7 @@ body {
 #skull1, #skull2 {
     position: absolute;
     width: 10rem;
-    top: 50%;
+    top: 35%;
     transform: translateY(-50%)
 }
 
@@ -28,11 +28,17 @@ body {
 }
 
 main {
-    position: absolute;
-    margin: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 75vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#heading-container {
+    flex-basis: 50%;
 }
 
 #heading {
@@ -41,7 +47,8 @@ main {
 }
 
 #inputs {
-    display: flex;
+    flex-basis: 50%;
+    max-width: 325px;
 }
 
 input:-webkit-autofill,
@@ -76,27 +83,17 @@ input:-webkit-autofill:active{
 }
 
 #results {
+    display: none;
     min-height: 75px;
-    margin: 68vh auto 0 auto;
+    flex-basis: 50%;
     font-size: 1.2rem;
-    width: 50%;
+    margin: auto;
 }
 
-@media screen and (max-width: 649px) {
-    #results {
-        margin: 70vh auto 0 auto;
-    }
-}
-
-@media screen and (max-width: 327px) {
-    #results {
-        margin: 72vh auto 0 auto;
-    }
-}
 
 #copy {
     font-size: 1.2rem;
-    margin: 25px auto 0 auto;
+    margin: 0px auto 0 auto;
     width: 50%;
 }
 
